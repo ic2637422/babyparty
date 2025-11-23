@@ -189,3 +189,27 @@ iframe {
     50%{transform:scale(1.05)}
     100%{transform:scale(1)}
     }
+@media (max-width:480px){
+h1{font-size:26px;}
+.sub{font-size:16px;}
+.container, .card{padding:16px;}
+.btn{padding:12px;font-size:15px;border-radius:14px;}
+.countdown{font-size:22px;padding:10px 16px;}
+.balloons{max-width:260px;}
+
+
+/* Move clouds further out to avoid overlap */
+.cloud.small{top:10px;left:5%;}
+.cloud.med{top:60px;left:65%;}
+.cloud.big{top:120px;left:30%;}
+}
+
+
+@media (max-width:360px){
+h1{font-size:22px;}
+.sub{font-size:15px;}
+.countdown{font-size:20px;}
+.btn{font-size:14px;}
+.balloons{max-width:220px;}
+}
+
