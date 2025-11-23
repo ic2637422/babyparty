@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitație la cumătria Selinei!</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Background music (optional) -->
+<audio autoplay loop hidden>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Lee_Rosevere/Music_for_Podcast_15/Lee_Rosevere_-_06_-_Curiosity.wav" type="audio/wav">
+</audio>
+
+<!-- Animated background elements -->
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+<div class="balloon balloon1"></div>
+<div class="balloon balloon2"></div>
+
+<!-- Card -->
+<div class="card">
+
+    <h1>🌸 Invitație la cumătria Selinei! 🌸</h1>
+    <p class="sub">Vă invităm la această sărbătoare minunată!</p>
+
+    <!-- Cartoon bear holding flowers -->
+    <img src=images/sel3.jpg class="baby-img" alt="cute bear">
+
+    <!-- Optional baby photo (replace with your own image URL) -->
+    <!-- <img src="YOUR_IMAGE.jpg" class="photo" alt="Baby Selina photo"> -->
+
+    <p class="details">
+        👶 <strong>Numele Bebelușului:</strong> Selina <br><br>
+        📅 <strong>Data:</strong> July 30, 2026 <br>
+        🕒 <strong>Timpul:</strong> 3:00 PM <br>
+        📍 <strong>Locația:</strong> Braviceni, Orhei
+    </p>
+
+    <a class="btn" 
+       href="https://maps.app.goo.gl/ev9f6Wvn3jUa5c9C9" target="_blank">
+       🌍 Vedeți Locația
+    </a>
+
+    <br><br>
+
+    <!-- RSVP Section -->
+   <!-- <h2 class="rsvp-title">💌 RSVP</h2>
+    <p class="rsvp-text">
+        Please let us know if you can join the celebration!
+    </p>
+    -->
+
+    <!-- Replace with your real Google Form link -->
+    <!-- <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSd_TestForm/viewform?embedded=true">
+    </iframe> -->
+
+    <p class="footer">Vă așteptăm cu mare drag! 💕</p>
+    <h1>Timp rămas până la eveniment:</h1>
+    <div id="countdown" class="countdown">
+    </div>
+    <script>
+        const countdownEl = document.getElementById('countdown');
+        function updateCountdown(){
+        const eventDate = new Date('2026-07-30T14:00:00');
+        const now = new Date();
+        const diff = eventDate - now;
+        if(diff <= 0){ countdownEl.textContent = 'Today!'; return; }
+        const d = Math.floor(diff / (1000*60*60*24));
+        const h = Math.floor((diff / (1000*60*60)) % 24);
+        const m = Math.floor((diff / (1000*60)) % 60);
+        const s = Math.floor((diff / 1000) % 60);
+        countdownEl.textContent = `${d}d ${h}h ${m}m ${s}s`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</div>
+
+</body>
+</html>
