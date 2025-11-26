@@ -43,7 +43,7 @@ h1 {
 /* Floating bear illustration */
 .baby-img {
     width: 420px;
-    margin: 20px 0;
+    margin: 20px auto;
     animation: float 3s infinite ease-in-out;
     border-radius: 15px;
 }
@@ -192,7 +192,7 @@ iframe {
 @media (max-width:480px){
 h1{font-size:26px;}
 .sub{font-size:16px;}
-.container, .card{padding:16px;}
+.container, .card{padding:16px;margin: 0 auto;}
 .btn{padding:12px;font-size:15px;border-radius:14px;}
 .countdown{font-size:22px;padding:10px 16px;}
 .balloons{max-width:260px;}
@@ -212,4 +212,5 @@ h1{font-size:22px;}
 .btn{font-size:14px;}
 .balloons{max-width:220px;}
 }
+
 
