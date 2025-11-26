@@ -19,8 +19,8 @@ body {
 
 /* Main card */
 .card {
-    background: #ffffffcc;
-    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
     max-width: 650px;
     margin: 60px auto;
     padding: 35px;
@@ -214,6 +214,7 @@ h1{font-size:22px;}
 .balloons{max-width:220px;}
 .card{margin: 30px auto;}
 }
+
 
 
 
