@@ -214,8 +214,10 @@ h1{font-size:22px;}
 .countdown{font-size:20px;}
 .btn{font-size:14px;}
 .balloons{max-width:220px;}
-.card{margin: 30px auto;}
+.card{margin: 30px auto;background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);}
 }
+
 
 
 
