@@ -19,7 +19,7 @@ body {
 
 /* Main card */
 .card {
-    background: red;
+    background: rgba(255 255 255 0.3);
     backdrop-filter: blur(2px);
     max-width: 650px;
     margin: 60px auto;
@@ -217,6 +217,7 @@ h1{font-size:22px;}
 .card{margin: 30px auto;}
     
 }
+
 
 
 
