@@ -42,7 +42,7 @@ h1 {
 
 /* Floating bear illustration */
 .baby-img {
-    width: 300px;
+    width: 200px;
     margin: 20px auto;
     animation: float 3s infinite ease-in-out;
     border-radius: 15px;
@@ -196,6 +196,7 @@ h1{font-size:26px;}
 .btn{padding:12px;font-size:15px;border-radius:14px;}
 .countdown{font-size:22px;padding:10px 16px;}
 .balloons{max-width:260px;}
+.card{margin: 30px auto;}
 
 
 /* Move clouds further out to avoid overlap */
@@ -211,7 +212,9 @@ h1{font-size:22px;}
 .countdown{font-size:20px;}
 .btn{font-size:14px;}
 .balloons{max-width:220px;}
+.card{margin: 30px auto;}
 }
+
 
 
 
