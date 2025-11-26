@@ -42,7 +42,7 @@ h1 {
 
 /* Floating bear illustration */
 .baby-img {
-    width: 420px;
+    width: 300px;
     margin: 20px auto;
     animation: float 3s infinite ease-in-out;
     border-radius: 15px;
@@ -212,5 +212,6 @@ h1{font-size:22px;}
 .btn{font-size:14px;}
 .balloons{max-width:220px;}
 }
+
 
 
