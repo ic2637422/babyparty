@@ -3,8 +3,10 @@ body {
     font-family: "Poppins", sans-serif;
     /* background: linear-gradient(120deg, #ffd6e7, #ffeaf4, #ffd0e8); */
     background-image: url("./images/disney.jpeg");
+    
     /* background-size: 100% 100%; */
     animation: gradientMove 15s ease infinite;
+    
     margin: 0;
     padding: 0;
     text-align: center;
@@ -19,20 +21,29 @@ body {
 
 /* Main card */
 .card {
-    background: rgba(255 255 255 0.3);
-    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
     max-width: 650px;
     margin: 60px auto;
     padding: 35px;
     border-radius: 30px;
     box-shadow: 0 0 25px rgba(255, 150, 180, 0.3);
 }
+.card p{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #ddcca3;
+    letter-spacing: 2px;
+}
 
 /* Titles */
 h1 {
-    color: #ff72ae;
+    text-shadow: 5px 5px 0px rgba(33, 230, 190, 0.2);
+    color: #000000;
     font-size: 2rem;
     margin-bottom: 10px;
+}
+.names {
+     text-shadow: 2px 2px 0px #1E9EE6, 4px 4px 0px rgba(0,0,0,0.25);
 }
 .sub {
     color: #b4698e;
@@ -42,7 +53,7 @@ h1 {
 
 /* Floating bear illustration */
 .baby-img {
-    width: 200px;
+    width: 400px;
     margin: 20px auto;
     animation: float 3s infinite ease-in-out;
     border-radius: 15px;
@@ -66,8 +77,47 @@ h1 {
     font-size: 1.4rem;
     line-height: 1.6;
     margin: 25px 0;
-    color: #5a5a5a;
+    color: #262323;
 }
+.details strong{
+    color: black;
+    font-family: cursive;
+    font-style: italic;
+}
+ 
+#test{
+	margin: 0px auto;
+	/* width: 400px; */
+
+    font-size: 30px;
+}
+ #test ul {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	
+	padding: 0px;
+	margin: 0px;
+}
+#test li{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    align-content: center;
+    text-shadow: 1px 1px 3px #666, -1px -1px 3px #FFF, 1px 1px #666, -1px -1px #FFF;
+    color: #ddcca3;
+}
+
+ 
+
+.dta {
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: -1px -1px #666, 1px 1px #FFF;
+    color: #ddcca3;
+}
+
 
 /* Button */
 .btn {
@@ -82,21 +132,9 @@ h1 {
     transition: 0.3s;
 }
 .btn:hover {
-    background: #ff4f96;
+    background: #b49da6;
 }
 
-/* RSVP */
-.rsvp-title {
-    color: #ff72ae;
-    font-size: 2.2rem;
-    margin-top: 40px;
-}
-
-.rsvp-text {
-    color: #777;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
 
 /* RSVP embed */
 iframe {
@@ -110,60 +148,11 @@ iframe {
 /* Footer */
 .footer {
     margin-top: 30px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #777;
 }
 
-/* --- ANIMATED CLOUDS --- */
-.cloud {
-    position: fixed;
-    background: url("https://i.imgur.com/1aN0cMZ.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 180px;
-    height: 100px;
-    opacity: 0.5;
-    animation: cloudMove 40s linear infinite;
-    z-index: -1;
-}
 
-@keyframes cloudMove {
-    from { transform: translateX(-300px); }
-    to   { transform: translateX(120%); }
-}
-
-.cloud1 { top: 40px; left: -200px; animation-duration: 45s; }
-.cloud2 { top: 120px; left: -300px; animation-duration: 55s; }
-.cloud3 { top: 200px; left: -250px; animation-duration: 50s; }
-
-/* --- FLOATING BALLOONS --- */
-.balloon {
-    position: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 120px;
-    height: 160px;
-    animation: balloonFloat 6s ease-in-out infinite;
-    z-index: -1;
-}
-
-.balloon1 {
-    background-image: url("./images/sel1.jpg");
-    right: 10%;
-    bottom: 20%;
-    border-radius: 15px;
-    height: 300px;
-    width: 200px;
-}
-.balloon2 {
-    background-image: url("./images/sel2.jpg");
-    left: 10%;
-    bottom: 18%;
-    animation-duration: 7s;
-    border-radius: 15px;
-    height: 300px;
-    width: 200px;
-}
 
 @keyframes balloonFloat {
     0%,100% { transform: translateY(0); }
@@ -189,10 +178,11 @@ iframe {
     50%{transform:scale(1.05)}
     100%{transform:scale(1)}
     }
-@media (max-width:480px){
+
+    @media (max-width:480px){
 h1{font-size:26px;}
 .sub{font-size:16px;}
-.container, .card{padding:16px;margin: 0 auto;}
+.container, .card{padding:16px; margin: 0 auto;}
 .btn{padding:12px;font-size:15px;border-radius:14px;}
 .countdown{font-size:22px;padding:10px 16px;}
 .balloons{max-width:260px;}
@@ -212,20 +202,4 @@ h1{font-size:22px;}
 .btn{font-size:14px;}
 .balloons{max-width:220px;}
 .card{margin: 30px auto;}
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
