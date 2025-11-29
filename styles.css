@@ -53,8 +53,8 @@ h1 {
 
 /* Floating bear illustration */
 .baby-img {
-    width: 400px;
-    margin: 20px auto;
+    width: 300px;
+    margin: 0px auto;
     animation: float 3s infinite ease-in-out;
     border-radius: 15px;
 }
@@ -203,3 +203,4 @@ h1{font-size:22px;}
 .balloons{max-width:220px;}
 .card{margin: 30px auto;}
 }
+
