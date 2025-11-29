@@ -45,6 +45,10 @@ h1 {
 .names {
      text-shadow: 2px 2px 0px #1E9EE6, 4px 4px 0px rgba(0,0,0,0.25);
 }
+.card>.loc {
+    font-size: 1.5rem;
+    color: #a2dc5b;
+}
 .sub {
     color: #b4698e;
     font-size: 1.3rem;
@@ -53,7 +57,7 @@ h1 {
 
 /* Floating bear illustration */
 .baby-img {
-    width: 200px;
+    width: 300px;
     margin: 0px auto;
     animation: float 3s infinite ease-in-out;
     border-radius: 15px;
@@ -203,5 +207,3 @@ h1{font-size:22px;}
 .balloons{max-width:220px;}
 .card{margin: 30px auto;}
 }
-
-
