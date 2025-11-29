@@ -3,44 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitație la cumătria Selinei!</title>
+    <title>Selina's first party!</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- Background music (optional) -->
-<audio autoplay loop hidden>
-    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Lee_Rosevere/Music_for_Podcast_15/Lee_Rosevere_-_06_-_Curiosity.wav" type="audio/wav">
+<audio id="bgMusic" autoplay loop muted>
+  <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Sergey_Cheremisinov/Enchanted/Sergey_Cheremisinov_-_Enchanted.mp3" type="audio/mp3">
 </audio>
 
-<!-- Animated background elements -->
-<!--
-<div class="cloud cloud1"></div>
-<div class="cloud cloud2"></div>
-<div class="cloud cloud3"></div>
-<div class="balloon balloon1"></div>
-<div class="balloon balloon2"></div>
-    -->
+<script>
+document.addEventListener("click", function () {
+    const audio = document.getElementById("bgMusic");
+    audio.muted = false;     // unmute after user interaction (mobile rule)
+    audio.play();
+}, { once: true });
+</script>
 
-<!-- Card -->
+
+
 <div class="card">
 
-    <h1>🌸 Invitație la cumătria Selinei! 🌸</h1>
-    <p class="sub">Vă invităm la această sărbătoare minunată!</p>
-
-    <!-- Cartoon bear holding flowers -->
+    <h1><span class="names">Selina</span>'s first party!</h1>
     <img src=images/sel3.jpg class="baby-img" alt="cute bear">
 
-    <!-- Optional baby photo (replace with your own image URL) -->
-    <!-- <img src="YOUR_IMAGE.jpg" class="photo" alt="Baby Selina photo"> -->
-
     <p class="details">
-        👶 <strong>Numele Bebelușului:</strong> Selina <br><br>
-        📅 <strong>Data:</strong> July 30, 2026 <br>
-        🕒 <strong>Timpul:</strong> 3:00 PM <br>
-        📍 <strong>Locația:</strong> Braviceni, Orhei
+        
+        Sunt cel mai frumos dar pe care Dumnezeu <br> l-a făcut familiei mele! <br>
+        Alături de părinții mei <br>
+        <strong>Marina și Sergiu</strong> <br>
+        Vă invităm să sărbătorim împreuna cu magie, culoare și multă distracție prima mea petrecere!
     </p>
+    <br><br>
+    
+    <div id="test">
+        <ul>
+            <li>Joi</li>
+            <li class="ups"><span class="dta">30</span><br>Iulie <br> 2026</li>
+            <li>17:00</li>
+        </ul>
+    </div>
 
     <a class="btn" 
        href="https://maps.app.goo.gl/ev9f6Wvn3jUa5c9C9" target="_blank">
@@ -49,17 +53,6 @@
 
     <br><br>
 
-    <!-- RSVP Section -->
-   <!-- <h2 class="rsvp-title">💌 RSVP</h2>
-    <p class="rsvp-text">
-        Please let us know if you can join the celebration!
-    </p>
-    -->
-
-    <!-- Replace with your real Google Form link -->
-    <!-- <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSd_TestForm/viewform?embedded=true">
-    </iframe> -->
 
     <p class="footer">Vă așteptăm cu mare drag! 💕</p>
     <h1>Timp rămas până la eveniment:</h1>
@@ -85,4 +78,3 @@
 
 </body>
 </html>
-
